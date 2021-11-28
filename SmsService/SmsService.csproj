@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.2.4" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.2.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmsService.Definition\SmsService.Definition.csproj" />
+    <ProjectReference Include="..\SmsService.Integration.Consumers\SmsService.Integration.Consumers.csproj" />
+    <ProjectReference Include="..\SmsService.SenderOne\SmsService.SenderOne.csproj" />
+    <ProjectReference Include="..\SmsService.SenderTwo\SmsService.SenderTwo.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+
+        <RootNamespace>SmsService.Domain.Tests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoFixture" Version="4.17.0" />
+        <PackageReference Include="AutoFixture.AutoMoq" Version="4.17.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+        <PackageReference Include="NUnit" Version="3.13.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SmsService.Domain\SmsService.Domain.csproj" />
+      <ProjectReference Include="..\SmsService.SenderOne\SmsService.SenderOne.csproj" />
+      <ProjectReference Include="..\SmsService.SenderTwo\SmsService.SenderTwo.csproj" />
+    </ItemGroup>
+
+</Project>

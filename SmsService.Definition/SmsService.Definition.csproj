@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Authors>Liam Coffey</Authors>
+        <Description>Contract for SmsService</Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <Folder Include="Commands\" />
+        <Folder Include="Core\" />
+        <Folder Include="Events\" />
+    </ItemGroup>
+</Project>
