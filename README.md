@@ -27,13 +27,13 @@ Run following commands in the terminal:
 
 `nuget restore`
 
-`Dotnet clean`
+`dotnet clean`
 
-`Dotnet build`
+`dotnet build`
 
-`Dotnet Test`
+`dotnet test`
 
-`Dotnet Run --project SmsService`
+`dotnet run --project SmsService`
 
 ### Framework: 
 - `.net core 5.0`
